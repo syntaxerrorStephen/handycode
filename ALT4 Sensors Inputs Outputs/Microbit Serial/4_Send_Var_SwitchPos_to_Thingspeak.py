@@ -10,7 +10,6 @@ myAPI = "0P838AQUU1O7B3EJ"  #your key from your own thingspeak account. Put your
 
 # the thingspeak bit
 def updateThingSpeak(): 
-   print('Now updating thingspeak') 
    baseURL = 'https://api.thingspeak.com/update?api_key=%s' % myAPI    
 
    f = urlopen(baseURL + "&field1=%s" % (temperature) + "&field2=%s" % (switch_position) ) 
